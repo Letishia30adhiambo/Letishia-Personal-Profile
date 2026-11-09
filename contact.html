@@ -1,43 +1,35 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Contact Me | Letishia Adhiambo</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- HEADER -->
     <header>
-        <div class="logo">
-            LA. <span>Personal Profile</span>
-        </div>
+        <nav class="navbar">
+            <a href="index.html" class="logo">LA.</a>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="profile.html">Profile</a>
-            <a href="skills.html">Skills</a>
-            <a href="goals.html">Goals</a>
-            <a href="interests.html">Interests</a>
-            <a href="contact.html" class="active">Contact</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="skills.html">Skills</a>
+                <a href="goals.html">Goals</a>
+                <a href="interests.html">Interests</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
         </nav>
     </header>
 
-    <!-- MAIN CONTACT SECTION -->
-    <main class="contact-container">
+    <main class="contact-section">
 
-        <section class="contact-info">
+        <div class="contact-info">
+            <span class="small-title">LET'S CONNECT 💌</span>
 
-            <p class="small-heading">WELCOME TO MY SPACE ✨</p>
-
-            <h1>LET'S CONNECT <span>💌</span></h1>
-
-            <h2>Contact Me</h2>
+            <h1>Get In Touch</h1>
 
             <p>
                 Have a question or want to share an idea?
@@ -49,101 +41,67 @@
                 ideas about technology and creativity.
             </p>
 
-            <div class="contact-details">
-
-                <div class="detail-card">
-                    <span>📧</span>
-                    <div>
-                        <h3>Email Address</h3>
-                        <p>adhiamboletishia30@gmail.com</p>
-                    </div>
+            <div class="email-info">
+                <span>📧</span>
+                <div>
+                    <h3>My Gmail</h3>
+                    <p>adhiamboletishia30@gmail.com</p>
                 </div>
-
-                <div class="detail-card">
-                    <span>💻</span>
-                    <div>
-                        <h3>My Interest</h3>
-                        <p>Web Development and Technology</p>
-                    </div>
-                </div>
-
-                <div class="detail-card">
-                    <span>🌍</span>
-                    <div>
-                        <h3>My Goal</h3>
-                        <p>Become a skilled web developer</p>
-                    </div>
-                </div>
-
             </div>
+        </div>
 
-        </section>
+        <div class="contact-form-container">
+            <h2>Send Me a Message ✉</h2>
+            <p class="form-description">
+                Fill in the form below. I would love to hear from you!
+            </p>
 
-        <!-- CONTACT FORM -->
- ```html
-<section class="contact-form">
+            <form id="contact-form">
 
-    <h2>Send Me a Message 🚀</h2>
+                <label for="name">Your Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="from_name"
+                    placeholder="Enter your name"
+                    required
+                >
 
-    <p>Fill in the form below and send me your message.</p>
+                <label for="email">Your Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="reply_to"
+                    placeholder="Enter your email"
+                    required
+                >
 
-    <form id="contact-form">
+                <label for="message">Your Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Write your message here..."
+                    required
+                ></textarea>
 
-        <label for="name">Your name</label>
-        <input
-            type="text"
-            id="name"
-            name="from_name"
-            placeholder="Enter your name"
-            required
-        >
+               <button type="submit" id="send-button">
+    Send Message ✉
+</button>
 
-        <label for="email">Your email</label>
-        <input
-            type="email"
-            id="email"
-            name="from_email"
-            placeholder="Enter your email"
-            required
-        >
-
-        <label for="message">Your message</label>
-        <textarea
-            id="message"
-            name="message"
-            rows="6"
-            placeholder="Write your message here..."
-            required
-        ></textarea>
-
-        <button type="submit" id="send-btn">
-            Send Message ✉
-        </button>
-
-        <p id="status-message"></p>
-
-    </form>
-
-</section>
-```
+                <p id="form-status" aria-live="polite"></p>
+<p id="form-status"></p>
+            </form>
+        </div>
 
     </main>
 
-    <!-- FOOTER -->
     <footer>
-        <h3>LA. Personal Profile</h3>
-
+        <p>© 2026 Letishia Adhiambo | Personal Profile</p>
         <p>Learn. Practice. Grow. 💻</p>
-
-        <p>
-            © 2026 Letishia Adhiambo | Personal Profile
-        </p>
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
 <script src="script.js"></script>
-
 </body>
 </html>
-```
